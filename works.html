@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jing</title>
+        <link rel="icon" type="image" href="img/aT favicon.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="img/aT logo.png"></a>
+                </div>                
+                <button class="openMenu">&#9776;</button>
+                <ul class="mainMenu">
+                    <li><a href="works.html">works</a></li>
+                    <li><a href="magazine.html">magazine</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <!--<li><a href="#">contact</a></li>-->
+                    <!-- <li><a href="#">journal</a></li>-->
+                    <button class="closeMenu">&times;</button>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- filters -->
+        <section class="filters">
+            <button class="filter-button active" onclick="filterWorks('all')">works</button>
+            <button class="filter-button" onclick="filterWorks('social')">social</button>
+            <button class="filter-button" onclick="filterWorks('materials')">materials</button>
+            <button class="filter-button" onclick="filterWorks('product')">product</button>
+            <button class="filter-button" onclick="filterWorks('installation')">installation</button>
+            <button class="filter-button" onclick="filterWorks('space')">space</button>
+        </section>
+    
+        <section class="worksGrid" id="works-grid">
+            <!-- Project Placeholders -->
+             <!--
+            <div class="project social">
+                <a href="#">
+                    <img class="works-image" src="img/image pharmacy 3.jpg" alt="pharmacy">
+                    <div class="works-details">
+                        <p class="title">transhuman</p>
+                        <p class="description">Jing</p>
+                    </div>
+                </a>
+            </div>
+            -->
+
+            <!-- Duplicate or more project placeholders as needed -->
+            <!--
+            <div class="project product">
+                <a href="#">
+                    <img class="works-image" src="img/image pharmacy 1.jpg" alt="pharmacy">
+                    <div class="works-details">
+                        <p class="title">circular saw</p>
+                        <p class="description">Jing</p>
+                    </div>
+                </a>
+            </div>
+            -->
+            
+            <div class="project social materials product">
+                <a href="projects/memo_bag.html">
+                    <img class="works-image" src="img/memo_bag/memo_sketch.png" alt="memo bag sketch">                
+                    <div class="works-details">
+                        <p class="title">memo bag</p>
+                        <p class="description">PhD Candidate Benjamin Phua</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project materials installation">
+                <a href="/projects/mycelium.html">
+                    <img class="works-image" src="img/image pharmacy 3.jpg" alt="mushroom foot sketch">
+                    <div class="works-details">
+                        <p class="title">mycelium</p>
+                        <p class="description">corpus rhizoma</p>
+                    </div>
+                </a>
+            </div>
+          
+            <div class="project installation">
+                <a href="projects/usb.html">
+                    <img class="works-image" src="img/usb/usb_hero.jpeg" alt="usb sculpture">
+                    <div class="works-details">
+                        <p class="title">usb</p>
+                        <p class="description">Ivan Cheng + MUMA</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project product">
+                <a href="projects/strom.html">
+                    <img class="works-image" src="img/strom/strom_circularsaw.jpg" alt="3d cad of circular saw">
+                    <div class="works-details">
+                        <p class="title">circular saw - strøm</p>
+                        <p class="description">Outil Atelier, Monash University</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project materials product">
+                <a href="projects/round.html">
+                    <img class="works-image" src="img/round/round_hero.jpg" alt="round stoneware cup">
+                    <div class="works-details">
+                        <p class="title">round</p>
+                        <p class="description"></p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project materials space">
+                <a href="projects/yao.html">
+                    <img class="works-image" src="img/yao/yap_minihero.jpg" alt="model of a chinese pharmacy">
+                    <div class="works-details">
+                        <p class="title">yao</p>
+                        <p class="description"></p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project installation">
+                <a href="projects/truncate.html">
+                    <img class="works-image" src="img/truncate/truncate_hero.png" alt="truncated pyramid night lamp">
+                    <div class="works-details">
+                        <p class="title">truncate</p>
+                        <p class="description"></p>
+                    </div>
+                </a>
+            </div>
+        </section>
+      
+        <!-- page numbers for works -->
+        <!--
+        <section>
+          <div class="worksPage">
+            <a href="#">1</a>
+            <a href="#">2</a>
+          </div>
+        </section>
+        -->
+
+        <footer>
+            <!-- <button class="back-to-top" type="button" aria-label="Scroll to top"></button> -->
+            <p>&copy; 2025 by Yi Jing Ang</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,727 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Corbel, sans-serif;
+    color: #131E29;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+}
+
+.tab {
+    margin-left: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 32px;
+    height: 32px;
+    margin: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* menu */
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #131E29;
+    font-size: 18px;
+}
+
+nav .mainMenu li a:hover {
+    font-weight: bold; 
+}
+
+
+nav .mainMenu li a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+nav .mainMenu li a:not(:hover) {
+    opacity: 60%;
+}
+
+/* hamburger icons */
+nav .openMenu {
+    display: none;
+    background: none;
+    border-style: none;
+    font-size: 32px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu {
+    display: none;
+    background: none;
+    border-style: none;
+    font-size: 32px;
+    margin: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+/* home introduction */
+.introduction {
+    font-style: italic;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    max-width: 800px;
+}
+
+/* home display grid */
+.grid {
+    display: flex;
+    flex-direction: column;
+    column-gap: 48px;
+    row-gap: 40px;
+    margin-top: 40px;
+    width: 60%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 49px;
+    row-gap: 40px;
+}
+
+.item img {
+    background-color: lightgray;
+    flex: 40%;
+    width: 319.5px;
+    height: 213px;
+    aspect-ratio: 1;
+    display: block;
+}
+
+.spacer {
+    width: 10%; /* Creates blank space while maintaining symmetry */
+    height: auto;
+    background-color: transparent;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: gray;
+}
+
+
+/* works page */
+.filters {
+    margin: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.filter-button {
+    font-family: Corbel, sans-serif;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 30%;
+    font-size: 16px;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.filter-button.active {
+    opacity: 100%;
+}
+
+.filter-button:hover {
+    opacity: 100%;
+}
+
+.worksGrid {
+    display: grid;
+    column-gap: 26px;
+    row-gap: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    /*filter: grayscale(100%);*/
+    cursor: pointer;
+}
+
+/*
+.project img:hover {
+    filter: grayscale(0%);
+}
+*/
+
+.project a {
+    text-decoration: none;
+}
+
+.works-details {
+    padding: 10px;
+    color:#131E29;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.worksPage {
+    display: flex;
+    justify-content: right;
+    margin: 32px;
+    gap: 9px;
+    width: 85vw;
+}
+
+.worksPage a {
+    text-decoration: none;
+    color: black;
+}
+
+.worksPage a.active {
+    text-decoration: bold;
+    color: black;
+}
+
+/* magazine page */
+.magGrid {
+    display: grid;
+    gap: 26px;
+    margin-top: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.magazine a {
+    text-decoration: none;
+}
+
+.mag-image {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    background-color: none;
+    object-fit: contain;
+    aspect-ratio: 1;
+    display: block;
+    cursor: pointer;
+}
+
+.mag-details {
+    padding: 10px;
+    color: black;
+}
+
+.mag-details .description {
+    text-decoration: underline;
+}
+
+.magazine:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.magPage {
+    display: flex;
+    justify-content: right;
+    margin: 32px;
+    gap: 9px;
+    width: 85vw;
+}
+
+.magPage a {
+    text-decoration: none;
+    color: black;
+}
+
+.magPage a.active {
+    text-decoration: bold;
+    color: black;
+}
+
+/* project page */
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    margin: 25px 15px;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 14px;
+    width: 95%;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+}
+
+.breadcrumb span {
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* Carousel */
+.carousel {
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 70%;
+}
+
+.main-image {
+    width: 100%;
+    margin: 10px auto;
+    aspect-ratio: 3/2;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-image img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 65px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: transform 0.3s, opacity 0.3s;
+    border-radius: 2px;
+}
+
+.thumbnail:hover, .thumbnail.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* carousel arrow
+.carousel-arrow {
+    position: relative;
+    background: none;
+    vertical-align: baseline;
+    color: grey;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+*/
+
+
+/* Project Description */
+.project-description {
+    position: relative;
+    font-size: 15px;
+    text-align: left;
+    margin: 25px auto;
+    max-width: 60%;
+}
+
+.long-desc {
+    display: none;
+}
+
+#toggle-desc {
+    background: none;
+    border: none;
+    font-size: 12.5px;
+    font-style: italic;
+    position: absolute;
+    padding-top: 0px;
+    right: 0;
+    cursor: pointer;
+}
+
+/* Project Details */
+.project-details {
+    text-align: left;
+    padding: 0px;
+    padding-top: 35px;
+}
+
+.details-table {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+}
+
+.drow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    flex: 1;
+    padding-top: 5px;
+    word-wrap: break-word;
+}
+
+.dtitle {
+    flex: 0.4;
+    width: 90px;
+}
+
+.project-details .cell {
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+/* Project mag cover */
+.magCover {
+    text-align: center;
+    margin: 50px auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.magCover img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.magCover p {
+    font-size: 14px;
+    color: black;
+}
+
+/* about */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    background: none;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 20px;
+    text-align: left;
+    gap: 20px;
+}
+
+.about-text {
+    width: 55%;
+    padding: 70px;
+}
+
+.cv {
+    padding: 10px;
+    width: 45%;
+}
+
+.cv-frame {
+    width: 100%;
+    height: 800px;
+    border: none;
+}
+
+/* scroll to top button
+button.back-to-top{
+  margin: 0 !important;
+  padding: 0 !important;
+  background: white;
+  opacity: 70%;
+	height: 0px;
+  width: 0px;
+  overflow: hidden;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+  color: transparent;
+	clear: both;
+  visibility: hidden;
+  position: fixed;
+  cursor: pointer;
+  display: block;
+  border: none;
+  right: 50px;
+	bottom: 75px;
+  font-size: 0px;
+  outline: 0 !important;
+  z-index: 99;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+button.back-to-top:hover,
+button.back-to-top:active,
+button.back-to-top:focus,{
+  outline: 0 !important;
+}
+button.back-to-top::before,
+button.back-to-top::after {
+  content: "";
+    display: block;
+    vertical-align: middle;
+    border-bottom: solid 10px black;
+    border-left: solid 10px transparent;
+    line-height: 0;
+    border-right: solid 10px transparent;
+    height: 0;
+    margin: 18px auto 0;
+    width: 0;
+  border-radius:20px;
+  visibility: hidden;
+}
+button.back-to-top.show::after,
+button.back-to-top.show::before{
+  visibility: visible;
+}
+button.back-to-top::after {
+  border-bottom-color:#fff;
+      position: relative;
+  top:-24px;
+}
+button.back-to-top.show {
+  display: block;
+  background: #fff;
+  color: #00ab6c;
+  font-size: 25px;
+  right: 25px;
+	bottom: 50px;
+  height: 50px;
+  width: 50px;
+  visibility: visible;
+	box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
+}
+button.back-to-top.show:active {
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+*/
+
+/* magazine issue page */
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    width: 70vw;
+    max-width: 1600px;
+    height: 90vh;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/*
+canvas {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease-out;
+}*/
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Layout */
+/* mobile */
+@media (max-width: 768px) {
+    nav .mainMenu {
+        display: none;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        transition: top 1s ease;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        color: #B784A7;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: bold;
+    }
+      
+    nav .mainMenu li a:not(:hover) {
+      opacity: 60%;
+    }
+  
+    nav .mainMenu li a.active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    
+    /* home page */
+    .introduction {
+        width: 75%
+    }
+
+    .grid {
+        column-gap: 28px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 90%;
+    }
+
+    .row {
+        gap: 28px;
+    }
+
+    /* works page */
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        column-gap: 30px;
+        row-gap: 15px;
+        width: 90%;
+    }
+
+    .worksGrid {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+
+    /* magazine page */
+    .magGrid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+        row-gap: 35px;
+        width: 90%;
+    }
+
+    /* project page */
+    .carousel {
+        max-width: 400px;
+    }
+
+    .thumbnail {
+        width: 50px;
+        height: 35px;
+    }
+
+    .magCover img {
+        max-width: 200px;
+    }
+
+    /* project details */
+    .project-description {
+        max-width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    /* about page */
+    .about-container {
+        flex-wrap: wrap;
+        padding-top: 20px;
+        gap: 20px;
+    }
+
+    .about-text {
+        padding: 20px;
+    }
+
+    .about-text, .cv {
+        width: 100%;
+    }
+}
+
+/* beyond mobile */
+@media (min-width: 769px) {
+    /* home page */
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+    }
+
+    .item:nth-child(4), .item:nth-child(5) {
+
+        grid-column: span 3;
+        width: 60%;
+    }
+
+    .item:nth-child(9), .item:nth-child(10) {
+        grid-column: span 3;
+        width: 50%;
+    }
+
+    /* works page */
+    .worksGrid {
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+    }
+
+    /* magazine page */
+    .magGrid {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 96px;
+        row-gap: 50px;
+        width: 90%;
+    }
+
+    .carousel {
+        max-width: 800px;
+    }
+}
