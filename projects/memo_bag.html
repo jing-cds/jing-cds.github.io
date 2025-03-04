@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>memo bag/ works/ Jing</title>
+        <link rel="icon" type="image" href="/img/aT favicon.png">
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="/img/aT logo.png"></a>
+                </div>
+                <button class="openMenu">&#9776;</button>
+                <ul class="mainMenu">
+                    <li><a href="/works.html">works</a></li>
+                    <li><a href="/magazine.html">magazine</a></li>
+                    <li><a href="/about.html">about</a></li>
+                    <!--<li><a href="#">contact</a></li>-->
+                    <!-- <li><a href="#">journal</a></li>-->
+                    <button class="closeMenu">&times;</button>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- project breadcrumb -->
+        <div class="breadcrumb">
+            <a href="/works.html">works</a> |
+            <!--<a href="#">social</a> -->
+            <a>social, materials, product</a> |
+            <span>memo bag</span>
+        </div>
+
+        <!-- project content -->
+        <section class="project-container">
+
+            <!-- image carousel -->
+            <div class="carousel">
+                <div class="main-image">
+                    <img id="featured" src="/img/memo_bag/memo_sketch.png" alt="Project Image">
+                </div>
+                <div class="thumbnail-container">
+                    <!--<button class="carousel-arrow left" onclick="prevImage()">&#10094;</button>-->
+                    <img class="thumbnail" src="/img/memo_bag/memo_sketch.png" alt="Night lamp with opening">
+                    <!--<button class="carousel-arrow right" onclick="nextImage()">&#10095;</button>-->
+                </div>
+            </div>
+
+            <!-- expandable project description -->
+            <div class="project-description">
+                <p class="short-desc" style="font-style: italic;">
+                    Please note that this is still an ongoing research project at the time of writing in Mar 2025. 
+                    Specific design decisions and details are omitted, feel free to reach out to me 
+                    (<a href="/about.html" style="color:#131E29;">contact page!</a>) to learn more about the project. 
+                    <br>
+                </p>
+                <p class="short-desc"> 
+                    <br>
+                    Benjamin Phua is a PhD candidate in the Monash Creative Technologies Lab. 
+                    His interests lie in the applications of machine learning, deep learning and data science to health-related matters, especially as they relate to marginalised groups. 
+                    Ben's current research project investigates technologies to reduce the loss of personal items by neuro-divergent university students who regularly lose things.
+                </p>
+
+                <p class="long-desc">
+                    <br>
+                    Memo Bag is one of the many technologies created as a portable solution for when people are out and about. 
+                    With our audience at heart, the design explores making methods and materials that are low-effort and economical. 
+                    The current refinement of the Memo Bag integrates techniques from modularity, transformable fashion and visual inventory management.
+                </p>
+                <button id="toggle-desc">more ▼</button>
+
+                <div class="project-details">
+                    <h3>memo bag</h3>
+                    <div class="details-table">
+                        <div class="drow">
+                            <div class="cell dtitle">Client</div>
+                            <div class="cell">
+                                PhD Candidate Benjamin Phua, Monash Creative Technologies Lab
+                                <br>
+                                MATT (Monash Assistive Technologies Team)
+                            </div>
+                        </div>
+                        <div class="drow">
+                            <div class="cell dtitle">process</div>
+                            <div class="cell">
+                                modular fashion
+                            </div>
+                        </div>
+                        <div class="drow">
+                            <div class="cell dtitle">material</div>
+                            <div class="cell">
+                                textile
+                            </div>
+                        </div>
+                        <div class="drow">
+                            <div class="cell dtitle">| Oct - Dec 2024, ongoing refinement</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2025 by Yi Jing Ang
+        </footer>
+
+        <script src="/script.js"></script>
+    </body>
+</html>
