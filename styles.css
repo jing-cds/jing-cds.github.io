@@ -58,20 +58,19 @@ nav .mainMenu li a {
     text-decoration: none;
     color: #131E29;
     font-size: 18px;
+    opacity: 60%;
 }
 
 nav .mainMenu li a:hover {
     font-weight: bold; 
+    opacity: 100%;
 }
 
-
-nav .mainMenu li a.active {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-nav .mainMenu li a:not(:hover) {
-    opacity: 60%;
+#nav > .active > a {
+    font-weight: bold;
+    color: #B784A7;
+    opacity: 100%;
+    text-decoration: underline;
 }
 
 /* hamburger icons */

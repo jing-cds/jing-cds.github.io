@@ -14,10 +14,9 @@
                 <div class="logo">
                     <a href="index.html"><img src="img/aT logo.png"></a>
                 </div>                
-                <button class="openMenu">&#9776;</button>
-                <ul class="mainMenu">
+                <ul id="nav" class="mainMenu">
                     <li><a href="works.html">works</a></li>
-                    <li><a href="magazine.html">magazine</a></li>
+                    <li class="active"><a href="magazine.html" >magazine</a></li>
                     <li><a href="about.html">about</a></li>
                     <!--<li><a href="#">contact</a></li>-->
                     <!-- <li><a href="#">journal</a></li>-->
@@ -25,6 +24,15 @@
                 </ul>
             </nav>
         </header>
+
+        <script>
+            $(function() {
+               $('#nav li a').click(function() {
+                  $('#nav li').removeClass();
+                  $($(this).attr('href')).addClass('active');
+               });
+            });
+         </script>
 
 
         <!-- filters -->
