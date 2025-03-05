@@ -662,6 +662,10 @@ canvas {
         width: 90%;
     }
 
+    .filter-button {
+        color: #131E29;
+    }
+
     .worksGrid {
         grid-template-columns: repeat(1, 1fr);
         width: 90%;
