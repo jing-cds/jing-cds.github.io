@@ -164,6 +164,7 @@ footer {
 .filter-button {
     font-family: Corbel, sans-serif;
     background-color: transparent;
+    color:#131E29;
     border: none;
     cursor: pointer;
     opacity: 30%;
