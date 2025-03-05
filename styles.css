@@ -81,6 +81,7 @@ nav .openMenu {
     font-size: 32px;
     margin: 20px;
     cursor: pointer;
+    color: #131E29;
 }
 
 nav .mainMenu .closeMenu {
