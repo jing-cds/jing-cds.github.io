@@ -81,7 +81,7 @@ nav .openMenu {
     font-size: 32px;
     margin: 20px;
     cursor: pointer;
-    color: #131E29;
+    color:#B784A7;
 }
 
 nav .mainMenu .closeMenu {
@@ -390,6 +390,7 @@ footer {
     padding-top: 0px;
     right: 0;
     cursor: pointer;
+    color:#B784A7;
 }
 
 /* Project Details */
