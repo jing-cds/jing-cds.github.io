@@ -722,7 +722,8 @@ canvas {
     }
 
     .cv-frame {
-        height: 350px;
+        height: 425px;
+        width: 300px;
         border: solid; 
         border-style: double;
         border-color:#B784A7;
